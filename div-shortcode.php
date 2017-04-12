@@ -4,7 +4,7 @@ Plugin Name: Div Shortcode
 Plugin URI: https://www.github.com/billerickson/div-shortcode
 Description: Allows you to create a div by using the shortcodes [div] and [end-div]. To add an id of "foo" and class of "bar", use [div id="foo" class="bar"].
 Author: Bill Erickson
-Version: 2.2
+Version: 2.2.1
 Author URI: https://www.billerickson.net
 */
 
@@ -21,10 +21,10 @@ function be_div_shortcode( $atts ) {
 	), $atts, 'div-shortcode' );
 
 	$return = '<div';
-	if ( !empty( $class ) )
-		$return .= ' class="'. esc_attr( $class ) .'"';
-	if ( !empty( $id ) )
-		$return .= ' id="'. esc_attr( $id ) .'"';
+	if ( !empty( $atts['class'] ) )
+		$return .= ' class="'. esc_attr( $atts['class'] ) .'"';
+	if ( !empty( $atts['id'] ) )
+		$return .= ' id="'. esc_attr( $atts['id'] ) .'"';
 	$return .= '>';
 	return $return;
 }

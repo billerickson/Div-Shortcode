@@ -4,7 +4,7 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_i
 Tags: shortcode, div, columns
 Requires at least: 3.0
 Tested up to: 4.7
-Stable tag: 2.2
+Stable tag: 2.2.1
 
 Allows you to create a div by using the shortcodes [div] and [end-div].
 
@@ -15,6 +15,9 @@ Allows you to create a div by using the shortcodes [div] and [end-div]. To add a
 [Support Forum](https://github.com/billerickson/Div-Shortcode/issues)
 
 == Changelog ==
+
+= 2.2.1 =
+* Fix issue with attributes not being displayed
 
 = 2.2 =
 * Attributes can now be filtered using the `shortcode_atts_div-shortcode` filter
